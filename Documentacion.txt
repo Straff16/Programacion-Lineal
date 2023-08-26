@@ -1,3 +1,5 @@
+Integrantes: Paez, Eduardo 30.334.360
+             Madriz, Francisco 28.480.459
 Codigo
 
 - En la Línea 1, desclaramos un vector llamado 'c', el cual será la Función Objetivo.
@@ -15,11 +17,6 @@ Imprimimos x para mostrar los valores actualizados.
 
 - Entre la Línea 15-16, Mostramos los valores de la solucion de nuestro problema, indicando cada valor como si fuera (x,y,z)
 
-
-
 En conclusión:
 
-Este código resuelve un problema de programación lineal. La función objetivo c, las restricciones A y los límites de las restricciones b están definidos en el código.
-El código utiliza un bucle for para calcular la solución óptima. La solución óptima se guarda en la lista x, donde cada elemento de x representa el valor de la variable correspondiente en la función objetivo.
-El bucle anidado for se utiliza para multiplicar los coeficientes de las restricciones por los límites de las restricciones y sumarlos a la variable x[i]. Luego, se divide x[i]entre la suma de los coeficientes de la columna correspondiente en la matriz A.
-Finalmente, se imprime la solución utilizando la función print. La solución se muestra como una lista de valores.
+Este código resuelve un problema de programación lineal. La función objetivo c, las restricciones A y los límites de las restricciones b están definidos en el código. El código utiliza un bucle for para calcular la solución óptima. La solución óptima se guarda en la lista x, donde cada elemento de x representa el valor de la variable correspondiente en la función objetivo. El bucle anidado for se utiliza para multiplicar los coeficientes de las restricciones por los límites de las restricciones y sumarlos a la variable x[i]. Luego, se divide x[i]entre la suma de los coeficientes de la columna correspondiente en la matriz A. Finalmente, se imprime la solución utilizando la función print. La solución se muestra como una lista de valores.
