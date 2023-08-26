@@ -1,0 +1,25 @@
+Codigo
+
+- En la Línea 1, desclaramos un vector llamado 'c', el cual será la Función Objetivo.
+- En la Línea 1, desclaramos una matriz llamada 'A', el cual será las Restrincciones.
+- En la Línea 1, desclaramos un vector llamado 'b', el cual será el Límite de las Restrincciones.
+
+- En la Línea 6, se crea una lista llamada x, inicializada con ceros y una longitud de la variable cada
+- En la Línea 7, imprimimos la lista para observar como quedo
+
+- Entre la Línea 8-12, empezamos con un bucle for el cual itera a través de los índices de la función objetivo. Con cada interación representa una variable en la función objetivo y se utiliza para poder calcular su valor en la solución óptima.
+Luego le sigue otro bucle for, el cual itera a través de los índices de los límites de las restricciones, Con cada interación representauna restricción y se utiliza para calcular el producto de los coeficientesde esa restricción.
+En la siguiente Línea acumulamos el productode los coeficientesde la restricción 'j' con la variable 'i' en la lista de x. Esto hace que se sumen el producto del valor actual de la lista x, en modo de ir actualizando los valores.
+Después de completar el bucle 'j', se realiza otra operación para poder normalizar los valores de x. Donde 'x[i] /= sum(A[j][i] for j in range(len(A)))' divide el valor acumulado de 'x[i]' entre la suma de los coeficientes de la columna correspondienteen la matriz de restricciones A.
+Imprimimos x para mostrar los valores actualizados.
+
+- Entre la Línea 15-16, Mostramos los valores de la solucion de nuestro problema, indicando cada valor como si fuera (x,y,z)
+
+
+
+En conclusión:
+
+Este código resuelve un problema de programación lineal. La función objetivo c, las restricciones A y los límites de las restricciones b están definidos en el código.
+El código utiliza un bucle for para calcular la solución óptima. La solución óptima se guarda en la lista x, donde cada elemento de x representa el valor de la variable correspondiente en la función objetivo.
+El bucle anidado for se utiliza para multiplicar los coeficientes de las restricciones por los límites de las restricciones y sumarlos a la variable x[i]. Luego, se divide x[i]entre la suma de los coeficientes de la columna correspondiente en la matriz A.
+Finalmente, se imprime la solución utilizando la función print. La solución se muestra como una lista de valores.
