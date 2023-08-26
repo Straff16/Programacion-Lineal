@@ -11,4 +11,7 @@ for i in range(len(c)):
     x[i] /= sum(A[j][i] for j in range(len(A))) #Se divide el producto anterior entre la suma las filas de la matriz A
     print("\n", x)
 
+# Imprimir la solución
+print("\nLa solución es:")
+print("\t\tx = ", x[0], "\ty = ", x[1], "\tz = ", x[2])
 
